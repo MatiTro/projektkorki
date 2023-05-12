@@ -1,0 +1,111 @@
+.container-main {
+  height: 100%;
+  width: 100%;
+}
+
+.warehouse-main {
+  width: 100%;
+  background-color: whitesmoke;
+  position: relative;
+  height: 100%;
+}
+
+.slider-main {
+  width: 100%;
+  height: 94vh;
+  position: relative;
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.slider-main .slide {
+  width: 25%;
+  height: 100%;
+  position: relative;
+
+  transition: 0.5s;
+  background: white;
+}
+
+.slider-main .slide:nth-child(1) {
+  background-image: url("/public/img/magazynsurowce.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider-main .slide:nth-child(2) {
+  background-image: url("/public/img/dashboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider-main .slide:nth-child(3) {
+  background-image: url("/public/img/tablicakanban.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider-main .slide:nth-child(4) {
+  background-image: url("/public/img/todolist.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider-main .slide:hover {
+  width: 60%;
+  cursor: pointer;
+}
+#header-main {
+  background-color: whitesmoke;
+  color: white;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+.autor-main {
+  font-weight: normal;
+  font-size: 60%;
+  padding: 0;
+  margin: 0;
+  margin-right: 1%;
+  font-family: "Bad Script", cursive;
+  color: black;
+}
+
+#main {
+  height: auto;
+  width: 100%;
+}
+.logo-main {
+  min-height: 1px;
+  width: 200px;
+  display: inline-block;
+  height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+.logo-main:hover {
+  transform: scale(1.2);
+}
+
+#logo-main {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+#main-logo-main {
+  text-align: center;
+  margin-top: 1px;
+  width: auto;
+}
+.slider-main li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

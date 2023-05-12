@@ -1,0 +1,2 @@
+alert (stan paletowy)- gdy sie nie wprowadzi danych
+doradzić wizualnie

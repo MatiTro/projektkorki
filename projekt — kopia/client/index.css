@@ -1,0 +1,160 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+
+#root {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../../public/fonts/Poppins-Regular.ttf) format("truetype");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+}
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .btn {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 900px) {
+  .box {
+    width: 100%;
+    margin: 0 auto;
+    min-height: auto;
+  }
+  .btn {
+    margin: 10px auto;
+  }
+}
+
+@keyframes wave {
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/*  sadasdasdas  */
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.form-items button {
+  position: relative;
+}
+
+.form-items h2 {
+  color: #a26de3;
+  font-size: 1.75em;
+}
+
+.form-items label {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 1.15em;
+}
+
+.form-items textarea {
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-bottom: 60px;
+  border: 3px solid #6c757d;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+}
+
+.form-items textarea:focus {
+  border: 3px solid #a26de3;
+}
+
+.form-items input[type="text"],
+input[type="date"],
+select {
+  padding: 12px;
+  border: 3px solid #6c757d;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-items input[type="text"]:focus,
+input[type="date"]:focus {
+  border: 3px solid #a26de3;
+}
+
+.form-container fieldset {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.form-container legend {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-items button {
+  margin-top: 20px;
+  padding: 2px;
+  border: 3px solid #a26de3;
+  background-color: #a26de3;
+  color: white;
+}
+
+.form-items button:hover {
+  border: 3px solid #8954ca;
+  background-color: #8954ca;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
